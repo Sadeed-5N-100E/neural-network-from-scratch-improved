@@ -1,22 +1,11 @@
-# A Neural Network From Scratch
-This was written for my blog post [Machine Learning for Beginners: An Introduction to Neural Networks](https://victorzhou.com/blog/intro-to-neural-networks/).
+### About This Fork
 
-## Usage
+This fork of [Original Repository Name] introduces the following educational enhancements:
+1. **Weight Initialization Options**: Supports `normal`, `Xavier`, and `He` initialization methods for experimentation.
+2. **CSV Data Loader**: Easily load datasets from a CSV file for training and testing.
+3. **Metrics Tracking**: Adds loss and accuracy tracking for better insight into training performance.
 
-Install [numpy](http://www.numpy.org/), the only dependency, if you need to:
+These changes allow users to observe how initialization and hyperparameter tuning affect neural network performance.
 
-```bash
-$ pip install numpy
-```
+Dependency : [numpy](http://www.numpy.org/)
 
-Then, run it with no arguments:
-
-```bash
-$ python network.py
-```
-
-You can also [run this code in your browser](https://repl.it/@vzhou842/An-Introduction-to-Neural-Networks).
-
-## More
-
-You may also be interested in [a Convolutional Neural Network (CNN) implemented from scratch in Python](https://github.com/vzhou842/cnn-from-scratch), which was written for my [introduction to CNNs](https://victorzhou.com/blog/intro-to-cnns-part-1/).
