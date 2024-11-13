@@ -1,3 +1,6 @@
+# This fork comes with weight initialisation, csv file loader and metrics
+# for you to check the effects on metrics by changing hyperparameters. 
+# You can implement this neural network on your csv files . But make sure to preprocess the data.
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -43,8 +46,10 @@ class OurNeuralNetwork:
         h2 = sigmoid(self.w3 * x[0] + self.w4 * x[1] + self.b2)
         o1 = sigmoid(self.w5 * h1 + self.w6 * h2 + self.b3)
         return o1
-
-    def train(self, data, all_y_trues, learn_rate=0.1, epochs=1000):
+    # You can use the learn_rate as a 'dial' - a hyperparameter that is
+    # multiplied when updating weights and biases (line 81 - 89) . 
+    # Check the metrics for different learning rates ranging 0.01 to 0.2 
+    def train(self, data, all_y_trues, learn_rate=0.05, epochs=1000):
         losses = []
         for epoch in range(epochs):
             for x, y_true in zip(data, all_y_trues):
