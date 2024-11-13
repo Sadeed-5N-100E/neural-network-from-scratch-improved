@@ -1,6 +1,6 @@
 ### About This Fork
 
-This fork of [Original Repository Name] introduces the following educational enhancements:
+This fork of vzhou842/neural-network-from-scratch introduces the following educational enhancements:
 1. **Weight Initialization Options**: Supports `normal`, `Xavier`, and `He` initialization methods for experimentation.
 2. **CSV Data Loader**: Easily load datasets from a CSV file for training and testing.
 3. **Metrics Tracking**: Adds loss and accuracy tracking for better insight into training performance.
